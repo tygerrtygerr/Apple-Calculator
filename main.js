@@ -1,4 +1,7 @@
 //TODO fix display not clearing after computation and another number is entered
+//TODO fix the +/- button
+//TODO add computations with percentages
+//TODO add a delete button that replaces the clear button whenever there are numbers on the display 
 
 class Calculator { //creating a class that 
     constructor(previousOperandText, currentOperandText){ //where to place display text
@@ -15,7 +18,7 @@ class Calculator { //creating a class that
         this.operation = undefined; //because no operation is selected if we clear
     }
 
-    //TODO add a delete button that replaces the clear button whenever there are numbers on the display
+    
     delete(){
         this.currentOperand = this.currentOperand.toString().slice(0, -1);
         //this saves all the numbers except the one at the end
@@ -48,7 +51,7 @@ class Calculator { //creating a class that
             case '+':
                 computation = previous + current;
                 break;
-            case '*':
+            case 'x':
                 computation = previous * current;
                 break;
             case '-':
