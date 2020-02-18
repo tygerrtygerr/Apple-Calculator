@@ -1,7 +1,7 @@
 *, *::before, *::after{
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
-    font-weight: normal;
+    font-weight: 100;
 }
 
 body {
@@ -22,13 +22,25 @@ body {
 .calculator > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 2px solid black;
+    border: 6px solid black;
     outline: none;
     background-color: solid black;
+    border-radius: 55%;
+    font-weight: 100;
+}
+
+.grey-button {
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+
+.lightgrey-button {
+    background-color: rgb(141, 141, 141);
 }
 
 .orange-button {
-    background-color: orange;
+    background-color: rgb(252, 140, 13);
+    color: white;
 }
 
 .calculator > .orange-button:hover {
@@ -41,6 +53,9 @@ body {
 
 .span-two {
     grid-column: span 2; /*to make the bigger buttons wider*/
+    border-radius: 8px ;
+    background-color: rgb(78, 78, 78);
+    color: white;
 }
 
 .output {
